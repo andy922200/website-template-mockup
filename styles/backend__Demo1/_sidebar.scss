@@ -1,0 +1,92 @@
+@import "./../_mobile.scss";
+
+.sideMenu__wrapper{
+  position: absolute;
+  top:0;
+  z-index:3;
+  height: 100%;
+  @include tablet{
+    width:calc(100% - 30px);
+  }
+  .sideMenu{
+    position: relative;
+    z-index:2;
+    min-width: 300px;
+    width:20%;
+    @include tablet{
+      width:100%;
+    }
+    height:100%;
+    background-color: #24244E;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px hsla(0, 0%, 0%, 0.5);
+    transform: translateX(-100%);
+    transition:0.5s;
+    .logo{
+      text-align: center;
+      margin:0px 0px 20px 0px;
+      .logo__icon{
+        font-size: 28px;
+        color:rgba(66,202,254,1);
+        margin-right: 10px;
+      }
+      .logo__title{
+        font-size: 24px;
+        color:$white;
+      }
+    }
+    nav{
+      a{
+        display: block;
+        text-decoration: none;
+        color:$white;
+        padding:10px 20px;
+        font-size: 20px;
+        @include tablet{
+          text-align: center;
+        }
+      }
+      .navIcon{
+        margin-right: 10px;
+      }
+    }
+    .sideMenu__switch{
+      position:absolute;
+      width:30px;
+      height:60px;
+      color:$white;
+      background-color: rgba(36,36,78,0.8);
+      right:-30px;
+      bottom:0px;
+      top:0px;
+      margin:auto;
+      line-height: 60px;
+      text-align: center;
+      font-size: 26px;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  #sideMenu__switch{
+    position: absolute;
+    opacity: 0;
+    z-index:-1;
+  }
+
+  #sideMenu__switch:checked + .sideMenu{
+    transform:translateX(0);
+    transition:0.5s;
+    .sideMenu__switch .sideMenu__switchIcon{
+      transform: rotate(180deg);
+    }
+  }
+
+  @for $i from 0 through 5{
+    #tab#{$i}:focus{
+      background-color: rgba(85,168,253,1);
+      outline: 0px;
+    }
+  }
+}

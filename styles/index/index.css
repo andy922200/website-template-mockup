@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif !important;
+  background-color: #fafafa;
+}
+
+.logo__image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.index__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .index__title {
+    font-size: 24px;
+  }
+}
+
+.swiper-container {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+}
+
+.swiper-container .card {
+  background-color: white;
+}
+
+.swiper-container .card .card__img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-container .card .card__img img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.swiper-container .card .card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .card .card__title {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.swiper-container .card .card__title span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #f44336;
+}
+
+.swiper-container .card .card-footer--custom a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.swiper__instruction {
+  text-align: center;
+}
+
+.swiper__instruction:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.swiper__instruction:last-child {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer .footer__socialIcons {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer .footer__socialIcons a {
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+}
+/*# sourceMappingURL=index.css.map */

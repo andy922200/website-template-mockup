@@ -1,0 +1,33 @@
+@import "./../_mobile.scss";
+
+.optionsBar{
+  padding:10px 30px 10px 10px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index:3;
+  background-color: rgba(255,255,255,1);
+  border-bottom: 2px solid rgba(218, 215, 215, 0.74);
+  .optionsBar__icon{
+    font-size:24px;
+    margin-left: 20px;
+    @include mobile{
+      font-size:20px;
+    }
+    text-decoration: none;
+    color:gray;
+    &.optionsBar__icon--smWord{
+      font-size:16px;
+      @include mobile{
+        font-size:14px;
+      }
+    }
+  }
+  .optionsBar__icon--image{
+    border-radius:50%;
+    width:24px;
+    @include mobile{
+      font-size:20px;
+    }
+  }
+}

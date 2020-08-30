@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend__Demo1</title>
+  <link rel="icon" href="https://i.imgur.com/nDYQSNt.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/backend__Demo1/all.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="optionsBar col-12">
+        <a href="#" class="optionsBar__icon">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="optionsBar__icon">
+          <i class="fas fa-mobile-alt"></i>
+        </a>
+        <a href="#" class="optionsBar__icon">
+          <i class="far fa-bell"></i>
+        </a>
+        <a href="#" class="optionsBar__icon">
+          <i class="fas fa-cubes"></i>
+        </a>
+        <a href="#" class="optionsBar__icon">
+          <img src="https://picsum.photos/id/237/100/100" alt="profilePhoto" class="optionsBar__icon--image">
+        </a>
+        <a href="#" class="btn btn-outline-primary btn-sm optionsBar__icon optionsBar__icon--smWord">
+          Register
+        </a>
+      </div>
+      <div class="content col-12">
+        <div class="content__title">
+          Demo Items
+        </div>
+
+        <div class="card my-2 card--custom">
+          <div class="card-body">
+            <h5 class="card-title">Feature releases</h5>
+            <h6 class="card-subtitle mb-3 text-muted">31 tasks</h6>
+            <div class="card__circles">
+              <img src="https://picsum.photos/id/237/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/250/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/1/50/50" alt="card__circle" class="card__circles--image">
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-2 card--custom">
+          <div class="card-body">
+            <h5 class="card-title">User Requests</h5>
+            <h6 class="card-subtitle mb-3 text-muted">64 tasks</h6>
+            <div class="card__circles">
+              <img src="https://picsum.photos/id/8/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/101/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/10/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/12/50/50" alt="card__circle" class="card__circles--image">
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-2 card--custom">
+          <div class="card-body">
+            <h5 class="card-title">Sprints</h5>
+            <h6 class="card-subtitle mb-3 text-muted">18 tasks</h6>
+            <div class="card__circles">
+              <img src="https://picsum.photos/id/210/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/220/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/2/50/50" alt="card__circle" class="card__circles--image">
+              <img src="https://picsum.photos/id/5/50/50" alt="card__circle" class="card__circles--image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="sideMenu__wrapper">
+    <input type="checkbox" name="sideMenu__switch" id="sideMenu__switch">
+    <div class="sideMenu">
+      <div class="logo">
+        <i class="logo__icon fab fa-css3"></i><span class="logo__title">Demo</span>
+      </div>
+      <nav>
+        <a href="#" tabindex="0" id="tab0">
+          <i class="navIcon fas fa-cubes"></i>Integrations
+        </a>
+        <a href="#" tabindex="1" id="tab1">
+          <i class="navIcon fas fa-money-bill-wave"></i>Payroll
+        </a>
+        <a href="#" tabindex="2" id="tab2">
+          <i class="navIcon fas fa-user-alt"></i>Members
+        </a>
+        <a href="#" tabindex="3" id="tab3">
+          <i class="navIcon far fa-folder"></i>Projects
+        </a>
+        <a href="#" tabindex="4" id="tab4">
+          <i class="navIcon fas fa-receipt"></i>Plans & Billing
+        </a>
+        <a href="#" tabindex="5" id="tab5">
+          <i class="navIcon fas fa-cog"></i>Settings
+        </a>
+      </nav>
+      <label for="sideMenu__switch" class="sideMenu__switch">
+        <i class="sideMenu__switchIcon fas fa-arrow-right"></i>
+      </label>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  <script src="./js/backend__Demo1.js"></script>
+</body>
+</html>
